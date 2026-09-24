@@ -6,7 +6,7 @@
     <meta name="color-scheme" content="dark light" />
     <meta
       name="description"
-      content="ujji_k06 — a Roblox Luau developer building the systems behind good games: gameplay, combat, movement, data, economy, UI, networking, and reusable frameworks."
+      content="ujji_k06 builds Roblox gameplay, networking systems, and developer tools in Luau and Rust. Explore open-source projects and playable experiences."
     />
     <title>ujji_k06 — Roblox Luau Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -771,6 +771,68 @@
       .section-head p {
         color: var(--muted);
         font-size: 1rem;
+      }
+
+      /* ---------------- source code ---------------- */
+      .source-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .source-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        min-width: 0;
+        padding: clamp(1.5rem, 3vw, 2.4rem);
+        border: 1px solid var(--line-2);
+        clip-path: var(--cut);
+        background: var(--surface);
+      }
+      .source-card:hover,
+      .source-card:focus-within {
+        border-color: var(--accent);
+      }
+      .source-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        color: var(--muted);
+        font: 0.72rem var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .source-card h3 {
+        font-size: clamp(2rem, 3.4vw, 3rem);
+        overflow-wrap: anywhere;
+      }
+      .source-card p {
+        max-width: 48ch;
+        color: var(--muted);
+      }
+      .source-trace {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: auto;
+        padding: 1rem 0;
+        border-block: 1px solid var(--line);
+        font: 0.76rem var(--mono);
+        color: var(--text);
+      }
+      .source-trace span {
+        color: var(--accent);
+      }
+      .source-link {
+        width: fit-content;
+        color: var(--accent);
+        font: 600 0.76rem var(--mono);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .source-link:hover {
+        color: var(--text);
       }
 
       /* ---------------- work (card carousel) ---------------- */
@@ -1550,7 +1612,8 @@
         .about-grid {
           grid-template-columns: 1fr;
         }
-        .clip-grid {
+        .clip-grid,
+        .source-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -1598,6 +1661,7 @@
         </a>
         <div class="nav-links">
           <a href="#about">About</a>
+          <a href="#code">Open source</a>
           <a href="#work">Work</a>
           <a href="#clips">Clips</a>
         </div>
@@ -1623,6 +1687,7 @@
     <div class="nav-menu" id="nav-menu">
       <nav class="wrap nav-menu-links" aria-label="Mobile">
         <a href="#about">About</a>
+        <a href="#code">Open source</a>
         <a href="#work">Work</a>
         <a href="#clips">Clips</a>
       </nav>
@@ -1637,31 +1702,30 @@
             commissions &amp; studio work</span
           >
           <h1 id="hero-title">
-            Roblox developer<br />
-            for hire, specialising in
-            <span class="grad">full-stack Luau.</span>
+            Roblox gameplay<br />
+            with the <span class="grad">systems to match.</span>
           </h1>
           <p class="hero-lead">
-            Hi! I'm Ujji — a Roblox programmer with 5+ years of coding
-            experience across Luau, Python, C++, HTML, and TypeScript. I've been
-            freelancing on Roblox since 2022, and I'm always happy to help turn
-            a good idea into something playable.
+            I'm Ujji, a Roblox developer with 5+ years of programming
+            experience, freelancing on Roblox since 2022. I build combat and
+            movement in Luau, plus the networking and tools that help a game
+            hold together beyond the prototype.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#work"
-              >See the work <span class="arrow" aria-hidden="true">→</span></a
+            <a class="btn primary" href="#code"
+              >Explore the code <span class="arrow" aria-hidden="true">→</span></a
             >
-            <a class="btn" href="#contact">Contact me</a>
+            <a class="btn" href="#work">See playable work</a>
           </div>
           <div class="hero-metrics">
             <div class="metric">
-              <strong>2022</strong><span>Building on Roblox</span>
+              <strong>Since 2022</strong><span>Roblox freelance work</span>
             </div>
             <div class="metric">
-              <strong>4</strong><span>Live experiences</span>
+              <strong>Luau</strong><span>Gameplay &amp; networking</span>
             </div>
             <div class="metric">
-              <strong>Full-stack</strong><span>Luau systems</span>
+              <strong>Rust</strong><span>Roblox developer tools</span>
             </div>
           </div>
         </div>
@@ -1696,23 +1760,74 @@
         <div class="about-grid">
           <div class="about-aside reveal">
             <p class="eyebrow">About</p>
-            <h2 id="about-title">Here's a little about me..</h2>
+            <h2 id="about-title">The work behind the game.</h2>
           </div>
           <div class="about-copy reveal">
             <p>
-              I'm <strong>ujji_k06</strong>, a Roblox developer who works across
-              the whole Luau stack. I'm not a one-trick scripter — I build
-              gameplay loops, data and saves, economies, UI, secure networking,
-              and the frameworks that keep all of it clean as a project grows.
+              I'm <strong>ujji_k06</strong>. I work across Roblox gameplay and
+              the systems around it: combat, traversal, data, UI, and server-side
+              networking. I care about how a mechanic feels to play and how easy
+              it is to maintain.
             </p>
             <p>
-              I've been building on Roblox <strong>since 2022</strong>. Most of
-              my public work is technical demos and reusable frameworks, and I
-              am actively looking to be part of a team so I can grow my own
-              portfolio. If your game needs a reliable scripter who won't ghost
-              you, that's exactly me.
+              I've been freelancing on Roblox <strong>since 2022</strong>. More
+              recently, I've published tools for measuring remote activity and
+              catching Rojo project errors. The code is public, so you can see
+              how I approach problems as well as the results.
             </p>
           </div>
+        </div>
+      </section>
+
+      <!-- OPEN SOURCE -->
+      <section
+        class="section wrap panel"
+        id="code"
+        aria-labelledby="code-title"
+      >
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Open source</p>
+            <h2 id="code-title">Built for the people building the game.</h2>
+          </div>
+          <p>
+            Tools for the less visible side of Roblox development. Read the
+            implementation, tests, and setup notes on GitHub.
+          </p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card reveal">
+            <div class="source-top"><span>Luau / Roblox</span><span>Networking</span></div>
+            <h3>RemoteLens</h3>
+            <p>
+              Opt-in server-side instrumentation for Roblox remotes. Track
+              call rates, direction, and estimated payload sizes with bounded
+              samples and no payload logging.
+            </p>
+            <div class="source-trace" aria-label="RemoteEvent to observation to recent rates">
+              RemoteEvent <span aria-hidden="true">→</span> observe
+              <span aria-hidden="true">→</span> recent rates
+            </div>
+            <a class="source-link" href="https://github.com/ujji-k06/remotelens" target="_blank" rel="noopener"
+              >Read RemoteLens on GitHub <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="source-card reveal">
+            <div class="source-top"><span>Rust / Rojo</span><span>Developer tooling</span></div>
+            <h3>rojo-doctor</h3>
+            <p>
+              A CLI that catches missing paths, child collisions, and ambiguous
+              init files in Rojo projects before a build. Readable diagnostics,
+              JSON output, and CI-friendly exit codes.
+            </p>
+            <div class="source-trace" aria-label="Project file to check to diagnostics">
+              .project.json <span aria-hidden="true">→</span> check
+              <span aria-hidden="true">→</span> diagnostics
+            </div>
+            <a class="source-link" href="https://github.com/ujji-k06/rojo-doctor" target="_blank" rel="noopener"
+              >Read rojo-doctor on GitHub <span aria-hidden="true">↗</span></a
+            >
+          </article>
         </div>
       </section>
 
@@ -1725,14 +1840,11 @@
         <div class="section-head reveal">
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2 id="work-title">
-              Roblox projects you might want to check out.
-            </h2>
+            <h2 id="work-title">Play the systems.</h2>
           </div>
           <p>
-            Live Roblox projects, mostly systems demos and reusable frameworks.
-            Some are experiments rather than full games, but feedback is always
-            welcome.
+            Playable Roblox demos and client work. Open an experience to try
+            a system, or watch the clips below to see it in motion.
           </p>
         </div>
       </section>
@@ -1754,7 +1866,7 @@
                   ><span class="tag">Networking</span>
                 </div>
                 <div class="card-foot">
-                  <span class="meta">73 visits · updated 2026-05</span>
+                  <span class="meta">Playable combat demo</span>
                   <a
                     class="card-link"
                     href="https://www.roblox.com/games/91647918827101/Combat-Framework"
@@ -1783,7 +1895,7 @@
                   ><span class="tag">Grappling</span>
                 </div>
                 <div class="card-foot">
-                  <span class="meta">13 visits · 1 like</span>
+                  <span class="meta">Movement prototype</span>
                   <a
                     class="card-link"
                     href="https://www.roblox.com/games/10441308512/ODM-Gear-Showcase"
@@ -1812,7 +1924,7 @@
                   ><span class="tag">Template</span>
                 </div>
                 <div class="card-foot">
-                  <span class="meta">26 visits · created 2026</span>
+                  <span class="meta">Client commission</span>
                   <a
                     class="card-link"
                     href="https://www.roblox.com/games/100061109427541/GrapplingGameBaseplate"
@@ -1831,16 +1943,15 @@
                 <span class="role">PvP arena · framework testbed</span>
                 <h3>BattleArena</h3>
                 <p>
-                  An anime battle arena-style game and my most recent project. It
-                  is still in progress, with four characters in testing, but feel
-                  free to check it out.
+                  An anime battle arena-style PvP prototype. Four characters
+                  are in testing as I continue building out the game.
                 </p>
                 <div class="tags">
                   <span class="tag">Combat</span><span class="tag">PvP</span
                   ><span class="tag">Arena</span>
                 </div>
                 <div class="card-foot">
-                  <span class="meta">9 visits · active Jul 2026</span>
+                  <span class="meta">Work in progress</span>
                   <a
                     class="card-link"
                     href="https://www.roblox.com/games/74673380921481/BattleArena"
@@ -2047,8 +2158,8 @@
         aria-labelledby="contact-title"
       >
         <div class="contact-panel reveal">
-          <p class="eyebrow" style="justify-content: center">Have an idea?</p>
-          <h2 id="contact-title">Get in touch below</h2>
+          <p class="eyebrow" style="justify-content: center">Get in touch</p>
+          <h2 id="contact-title">Have a Roblox project in mind?</h2>
           <p>
             Whether it's a combat prototype, a data layer, an economy, or a
             whole systems overhaul — tell me what you're building and I'll tell
@@ -2080,6 +2191,7 @@
     <footer class="footer">
       <div class="wrap">
         <span>© <span id="yr"></span> ujji_k06</span>
+        <a href="https://github.com/ujji-k06" target="_blank" rel="noopener">GitHub ↗</a>
         <a href="#top">Back to top ↑</a>
       </div>
     </footer>
