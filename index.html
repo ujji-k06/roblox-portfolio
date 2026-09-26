@@ -143,7 +143,7 @@
     .tools::before { content:"{  }"; position:absolute; top:38px; right:max(40px,calc((100vw - 1280px)/2)); color:#17141d16; font-family:var(--display); font-size:clamp(130px,28vw,420px); font-weight:900; line-height:1; pointer-events:none; }
     .tools .section-heading { position:relative; }
     .tools .section-heading h2 em { color:var(--blue); -webkit-text-stroke:2px var(--ink); }
-    .tool-grid { position:relative; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; }
+    .tool-grid { position:relative; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 420px),1fr)); gap:30px; }
     .tool-card { display:flex; flex-direction:column; align-items:flex-start; min-height:365px; padding:clamp(25px,3vw,40px); border:2px solid var(--ink); background:var(--white); box-shadow:9px 9px 0 var(--ink); }
     .tool-card:nth-child(2) { background:#ecebff; }
     .tool-card-top { display:flex; justify-content:space-between; width:100%; gap:20px; font-family:var(--mono); font-size:11px; font-weight:700; text-transform:uppercase; }
@@ -317,8 +317,8 @@
       </div>
     </section>
     <section class="section tools" id="code" aria-labelledby="code-title"><div class="shell">
-      <div class="section-heading reveal"><p class="eyebrow">Under the hood / open source</p><h2 id="code-title">Good games need<br><em>good tools.</em></h2><p>Two public projects for the less visible side of making Roblox games. Explore the implementation and setup notes on GitHub.</p></div>
-      <div class="tool-grid"><article class="tool-card reveal"><div class="tool-card-top"><span>Luau / networking</span><strong>{ }</strong></div><h3>RemoteLens</h3><p>Observe RemoteEvent activity and recent rates with lightweight samples, without logging payloads.</p><a href="https://github.com/ujji-k06/remotelens" target="_blank" rel="noopener noreferrer">See the source ↗</a></article><article class="tool-card reveal" style="--delay:100ms"><div class="tool-card-top"><span>Rust / Rojo</span><strong>_↗</strong></div><h3>rojo-doctor</h3><p>Catch missing paths, child collisions, and ambiguous init files before a build, with readable diagnostics and CI-friendly exit codes.</p><a href="https://github.com/ujji-k06/rojo-doctor" target="_blank" rel="noopener noreferrer">See the source ↗</a></article></div>
+      <div class="section-heading reveal"><p class="eyebrow">Under the hood / open source</p><h2 id="code-title">Good games need<br><em>good tools.</em></h2><p>Public tooling for the less visible side of making Roblox games. Explore the implementation and setup notes on GitHub.</p></div>
+      <div class="tool-grid"><article class="tool-card reveal"><div class="tool-card-top"><span>Rust / Rojo</span><strong>_↗</strong></div><h3>rojo-doctor</h3><p>Catch missing paths, child collisions, and ambiguous init files before a build, with readable diagnostics and CI-friendly exit codes.</p><a href="https://github.com/ujji-k06/rojo-doctor" target="_blank" rel="noopener noreferrer">See the source ↗</a></article></div>
     </div></section>
     <section class="section clips" id="clips" aria-labelledby="clips-title"><div class="shell">
       <div class="section-heading reveal"><p class="eyebrow">On tape / gameplay clips</p><h2 id="clips-title">See it <em>move.</em></h2><p>Quick looks at combat, interfaces, movement, and a ride. Pick a category, then play a clip.</p></div>
