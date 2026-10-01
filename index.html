@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17141d">
-  <meta name="description" content="Roblox gameplay developer specializing in combat, movement, and systems. Five years of programming experience, freelancing since 2022.">
+  <meta name="description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ujji_k06">
   <meta property="og:title" content="ujji_k06 — Roblox Gameplay Developer">
-  <meta property="og:description" content="Roblox gameplay developer specializing in combat, movement, and systems. Five years of programming experience, freelancing since 2022.">
+  <meta property="og:description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
   <meta property="og:url" content="https://ujji-k06.github.io/roblox-portfolio/">
   <meta property="og:image" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
   <meta property="og:image:secure_url" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="ujji_k06 Roblox gameplay developer showcase">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ujji_k06 — Roblox Gameplay Developer">
-  <meta name="twitter:description" content="Roblox gameplay developer specializing in combat, movement, and systems. Five years of programming experience, freelancing since 2022.">
+  <meta name="twitter:description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
   <meta name="twitter:image" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
 <title>ujji_k06 — Roblox Gameplay Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -696,21 +696,21 @@ const PORTFOLIO_DATA = {
     "name": "ujji_k06",
     "mark": "u.",
     "role": "Roblox Gameplay Developer",
-    "status": "Open to projects",
+    "status": "Open to commissions",
     "discord": ".ujji",
     "profileUrl": "https://www.roblox.com/users/2561421989/profile",
     "profileLabel": "Roblox Profile"
   },
   "hero": {
-    "eyebrow": "Ujji / gameplay developer",
+    "eyebrow": "Ujji / Roblox developer",
     "headline": [
-      "Systems",
-      "worth",
-      "playing."
+      "I make",
+      "games",
+      "feel good."
     ],
-    "lead": "Combat, movement, UI, and the invisible systems underneath. I make Roblox games that feel right to play and hold up under the hood.",
+    "lead": "Combat, movement, UI, and everything under the hood. If you need something that plays well and doesn't fall apart at scale, you're in the right place.",
     "tags": [
-      "Open to projects",
+      "Open to commissions",
       "Luau",
       "Rust"
     ],
@@ -722,11 +722,11 @@ const PORTFOLIO_DATA = {
     }
   },
   "banner": [
-    "Combat systems",
+    "Combat",
     "Movement",
     "Networking",
-    "Interface",
-    "Tooling"
+    "UI",
+    "Developer tools"
   ],
   "projects": [
     {
@@ -830,10 +830,10 @@ const PORTFOLIO_DATA = {
   ],
   "about": {
     "title": [
-      "A bit about",
-      "me."
+      "Hey, I'm",
+      "Ujji."
     ],
-    "text": "Five years of programming, freelancing on Roblox since 2022. I focus on mechanics players actually notice\u2014hit feedback, movement feel, responsive UI\u2014and the architecture that keeps it all stable at scale. Clean code matters to me as much as clean gameplay.",
+    "text": "I've been programming for over five years and freelancing on Roblox since 2022. I like building things that are fun to use and sensible to maintain. Melee combat, traversal, UI, networking, data systems. I build the parts players feel and the parts developers rely on.",
     "media": {
       "type": "image",
       "src": "profilepic.jpg",
@@ -841,9 +841,9 @@ const PORTFOLIO_DATA = {
     }
   },
   "contact": {
-    "message": "Whether it's a combat prototype, a data layer, an economy system, or a full overhaul\u2014I'd like to hear what you're working on.",
-    "panelTitle": "Say hello.",
-    "panelText": "Drop me a brief on Discord\u2014even a few lines is enough to start a conversation."
+    "message": "Combat prototype, data layer, economy, or a whole systems overhaul. Tell me what you're building and let's figure out if I'm a good fit.",
+    "panelTitle": "Got a project?",
+    "panelText": "Message me on Discord with what you need. Even a few lines is enough to get started."
   },
   "socials": [
     {
@@ -948,7 +948,7 @@ function render() {
     <section class="section" id="work">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Selected work</div><h2>Built to<br><em>be played.</em></h2></div>
+          <div><div class="eyebrow">Selected work</div><h2>Less talk.<br><em>More play.</em></h2></div>
         </div>
         <div class="project-grid">${(d.projects || []).map(projectCard).join('')}</div>
       </div>
@@ -957,7 +957,7 @@ function render() {
     <section class="section clips-section" id="clips">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Clips</div><h2>See it<br><em>in motion.</em></h2></div>
+          <div><div class="eyebrow">Gameplay clips</div><h2>See it<br><em>move.</em></h2></div>
         </div>
         <div class="clip-grid">
           ${featuredClip ? `<article class="clip-card featured reveal">
@@ -977,7 +977,7 @@ function render() {
     <section class="section side-section" id="side-projects">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Side projects</div><h2>Smaller scope.<br><em>Same standard.</em></h2></div>
+          <div><div class="eyebrow">Side projects</div><h2>Smaller stuff.<br><em>Still counts.</em></h2></div>
         </div>
         <div class="side-grid">${(d.sideProjects || []).map(sideProjectCard).join('')}</div>
       </div>
