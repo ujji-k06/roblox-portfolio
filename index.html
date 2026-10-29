@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17141d">
-  <meta name="description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
+  <meta name="description" content="Roblox gameplay developer for hire. Combat, movement, UI and networking systems in Luau and Rust, with playable demos and open-source tools.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ujji_k06">
   <meta property="og:title" content="ujji_k06 — Roblox Gameplay Developer">
-  <meta property="og:description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
+  <meta property="og:description" content="Roblox gameplay developer for hire. Combat, movement, UI and networking systems in Luau and Rust, with playable demos and open-source tools.">
   <meta property="og:url" content="https://ujji-k06.github.io/roblox-portfolio/">
   <meta property="og:image" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
   <meta property="og:image:secure_url" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="ujji_k06 Roblox gameplay developer showcase">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ujji_k06 — Roblox Gameplay Developer">
-  <meta name="twitter:description" content="Roblox developer building combat, movement, UI and systems in Luau and Rust. Open to commissions.">
+  <meta name="twitter:description" content="Roblox gameplay developer for hire. Combat, movement, UI and networking systems in Luau and Rust, with playable demos and open-source tools.">
   <meta name="twitter:image" content="https://ujji-k06.github.io/roblox-portfolio/og-image.jpg">
 <title>ujji_k06 — Roblox Gameplay Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -197,7 +197,7 @@ img,video,iframe{display:block}
 }
 
 .hero-media:before{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(145deg,#d6e0ff 0 34%,#6177f7 34% 54%,#222635 54% 63%,#254a35 63% 100%)}
-.hero-media:after{content:"GAMEPLAY / LOOP";position:absolute;z-index:4;left:16px;bottom:16px;padding:7px 9px;background:var(--yellow);color:var(--ink);border:2px solid var(--ink);font:700 8px var(--mono);letter-spacing:.09em;transition:transform .18s cubic-bezier(.2,.8,.2,1)}
+.hero-media:after{content:"GAMEPLAY";position:absolute;z-index:4;left:16px;bottom:16px;padding:7px 9px;background:var(--yellow);color:var(--ink);border:2px solid var(--ink);font:700 10px var(--mono);letter-spacing:.09em;transition:transform .18s cubic-bezier(.2,.8,.2,1)}
 .hero-media-wrap.is-hovered .hero-media:after{transform:translate(2px,-2px) rotate(-1deg)}
 .hero-media .media-fill{
   --hero-media-x:0px;--hero-media-y:0px;
@@ -237,8 +237,6 @@ img,video,iframe{display:block}
   100%{opacity:0;transform:rotate(var(--crack-angle)) scaleX(1.08)}
 }
 
-.media-placeholder{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);padding:10px 13px;background:rgba(248,243,232,.92);color:var(--ink);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);font:700 9px var(--mono);letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
-
 /* Marquee --------------------------------------------------------------- */
 .marquee{position:relative;z-index:10;overflow:hidden;background:var(--red);border-block:3px solid var(--ink);padding:13px 0}
 .marquee:before,.marquee:after{content:"";position:absolute;z-index:3;top:0;bottom:0;width:72px;pointer-events:none}
@@ -276,8 +274,7 @@ img,video,iframe{display:block}
 .project-preview .media-fill{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
 .project-preview iframe.media-fill{border:0}
 .project-link:hover .project-preview .media-fill{transform:scale(1.025)}
-.project-preview .media-placeholder{background:var(--yellow)}
-.project-index{position:absolute;z-index:4;top:14px;left:14px;padding:7px 9px;background:var(--paper);border:2px solid var(--ink);font:700 8px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.project-index{position:absolute;z-index:4;top:14px;left:14px;padding:7px 9px;background:var(--paper);border:2px solid var(--ink);font:700 10px var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .project-open{position:absolute;z-index:4;right:14px;bottom:14px;width:42px;height:42px;display:grid;place-items:center;background:var(--yellow);border:2px solid var(--ink);font:900 19px var(--body);transition:transform .2s ease}
 .project-link:hover .project-open{transform:translate(2px,-2px) rotate(-7deg)}
 .project-copy{padding:22px 2px 10px}
@@ -298,23 +295,40 @@ img,video,iframe{display:block}
 .clip-frame:before{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(145deg,#252b43,#6177f7 48%,#f34759 49%,#241d2b 75%)}
 .clip-frame .media-fill{position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .clip-card:hover .clip-frame .media-fill{transform:scale(1.02)}
-.clip-no{position:absolute;z-index:4;left:13px;top:13px;padding:6px 8px;border:1px solid rgba(23,20,29,.7);background:rgba(248,243,232,.92);color:var(--ink);font:700 7px var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.clip-no{position:absolute;z-index:4;left:13px;top:13px;padding:6px 8px;border:1px solid rgba(23,20,29,.7);background:rgba(248,243,232,.92);color:var(--ink);font:700 10px var(--mono);letter-spacing:.09em;text-transform:uppercase}
 .clip-play{position:absolute;z-index:4;right:14px;bottom:14px;display:grid;place-items:center;width:44px;height:44px;border:2px solid var(--ink);background:var(--yellow);color:var(--ink);font-size:14px;transition:transform .2s ease}
 .clip-card:hover .clip-play{transform:rotate(-8deg) scale(1.04)}
 .clip-meta{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:14px 2px 2px}
 .clip-meta h3{margin:0;font:900 30px/.95 var(--display);text-transform:uppercase}
-.clip-meta span{color:var(--yellow);font:700 7px var(--mono);letter-spacing:.09em;text-transform:uppercase;text-align:right}
+.clip-meta span{color:var(--yellow);font:700 10px var(--mono);letter-spacing:.09em;text-transform:uppercase;text-align:right}
 .clip-card.featured .clip-meta h3{font-size:42px}
+/* Align the stacked frames' bottoms with the featured frame. The featured
+   frame stays the 486px anchor, and the stack mirrors its geometry instead of
+   assuming a one-line meta:
+   - the first card is pinned to half the anchor budget, (486 + 45 - 22) / 2,
+     so its flexing frame swallows a wrapped title rather than pushing the
+     second card down the column;
+   - the last card keeps a definite 209.5px frame with its meta in normal flow,
+     so a wrapped title grows the stack downward instead of lifting the frame
+     off the anchor line (its bottom is always 486px below the stack top);
+   - both frames keep a 150px floor so a huge meta can never collapse them. */
+@media(min-width:981px){
+  .clip-stack{align-self:start;grid-template-rows:calc((486px + 45px - 22px)/2) auto}
+  .clip-stack .clip-card{display:flex;flex-direction:column}
+  .clip-stack .clip-frame{flex:1 1 auto;height:auto;min-height:150px}
+  .clip-stack .clip-card:last-child .clip-frame{flex:0 0 209.5px}
+  .clip-stack .clip-meta{flex:0 0 auto}
+}
 
 /* Side projects --------------------------------------------------------- */
 .side-section{background:var(--paper-2);border-bottom:1px solid var(--line)}
 .side-section .section-head{margin-bottom:28px;align-items:end}
 .side-section .section-head h2{font-size:clamp(48px,5.6vw,78px);line-height:.9}
 .side-section .section-note{max-width:360px}
-.side-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;perspective:1100px;perspective-origin:50% 45%}
+.side-grid{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;perspective:1100px;perspective-origin:50% 45%}
 .side-card{
   --side-tilt-x:0deg;--side-tilt-y:0deg;--side-lift:0px;
-  position:relative;min-height:240px;padding:22px;
+  position:relative;min-height:200px;padding:20px;
   display:flex;flex-direction:column;
   background:rgba(255,255,255,.36);
   border:1px solid rgba(23,20,29,.13);
@@ -331,13 +345,29 @@ img,video,iframe{display:block}
   border-color:rgba(23,20,29,.24);
   box-shadow:0 10px 24px rgba(23,20,29,.07)
 }
-.side-index{display:flex;align-items:center;gap:9px;font:700 7px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+/* Private repos are deliberately not links: dashed frame, flat fill, no lift. */
+.side-card.is-private{
+  background:rgba(23,20,29,.035);
+  border-style:dashed;
+  border-color:rgba(23,20,29,.22);
+  cursor:default
+}
+.side-card.is-private *{cursor:default}
+.side-card.is-private:hover{
+  --side-lift:0px;
+  background:rgba(23,20,29,.035);
+  border-color:rgba(23,20,29,.22);
+  box-shadow:0 1px 0 rgba(23,20,29,.04)
+}
+.side-index{display:flex;align-items:center;gap:9px;font:700 10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
 .side-index:before{content:"";width:18px;height:2px;background:var(--red);flex:0 0 auto}
-.side-card h3{margin:24px 0 10px;font:900 clamp(28px,2.5vw,38px)/.96 var(--display);letter-spacing:-.01em;text-transform:uppercase}
-.side-card p{margin:0;max-width:360px;color:#625b65;font-size:13.5px;line-height:1.55}
-.side-foot{margin-top:auto;padding-top:22px;display:flex;justify-content:space-between;gap:16px;align-items:center;border-top:1px solid rgba(23,20,29,.10);font:700 7px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.side-card h3{margin:20px 0 8px;font:900 clamp(28px,2.5vw,38px)/.96 var(--display);letter-spacing:-.01em;text-transform:uppercase}
+.side-card p{margin:0;max-width:none;color:#625b65;font-size:13.5px;line-height:1.55}
+.side-foot{margin-top:auto;padding-top:16px;display:flex;justify-content:space-between;gap:16px;align-items:center;border-top:1px solid rgba(23,20,29,.10);font:700 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .side-foot .side-open{display:grid;place-items:center;width:26px;height:26px;border:1px solid rgba(23,20,29,.14);color:var(--ink);font-size:11px;transition:transform .18s ease,border-color .18s ease,background .18s ease}
 .side-card:hover .side-open{transform:translate(2px,-2px);border-color:var(--ink);background:var(--paper-2)}
+.side-card.is-private .side-open{color:rgba(23,20,29,.36)}
+.side-card.is-private:hover .side-open{transform:none;border-color:rgba(23,20,29,.14);background:transparent}
 .side-link{display:flex;flex-direction:column;height:100%}
 
 /* About ----------------------------------------------------------------- */
@@ -380,14 +410,14 @@ img,video,iframe{display:block}
 
 .contact-panel > *{position:relative;z-index:1;transform:translateZ(12px)}
 .contact-panel .actions{transform:translateZ(20px)}
-.contact-panel small{display:block;color:#746d77;font:700 8px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.contact-panel small{display:block;color:#746d77;font:700 10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
 .contact-panel h3{margin:10px 0 10px;font:900 42px/.9 var(--display);text-transform:uppercase}
 .contact-panel p{margin:0 0 18px;color:#534c56;font-size:15px;line-height:1.52}
 .contact-panel .actions{gap:10px}
 .contact-panel .btn{width:100%;justify-content:flex-start;color:var(--ink);border-color:var(--ink)}
 .contact-panel .btn.primary{background:var(--yellow);box-shadow:4px 4px 0 var(--red)}
 .contact-panel .btn.ghost{background:var(--ink);color:var(--paper);box-shadow:4px 4px 0 var(--yellow)}
-.contact-panel .btn.roblox{background:var(--blue);color:var(--paper);border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.contact-panel .btn.roblox{background:var(--blue);color:var(--ink);border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
 .contact-panel .btn.roblox:hover{color:var(--ink);box-shadow:7px 7px 0 var(--yellow)}
 
 footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);font:700 9px var(--mono);letter-spacing:.06em;text-transform:uppercase}
@@ -409,7 +439,6 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
   .brand-copy span{display:none}
   .contact-layout{grid-template-columns:1fr}
   .contact-copy h2{max-width:none}
-  .side-grid{grid-template-columns:1fr 1fr}
 }
 
 @media(max-width:980px){
@@ -424,10 +453,17 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
   .clip-card.featured .clip-frame{height:460px}
   .clip-stack{grid-template-columns:1fr 1fr;grid-template-rows:none}
   .section-head{grid-template-columns:1fr}.section-note{max-width:520px}
-  .project-card,.project-card:nth-child(n){grid-column:span 6}
-  .project-card:nth-child(1){grid-column:span 12}
-  .project-card:nth-child(1) .project-preview{height:520px}
   .about-layout{grid-template-columns:1fr;gap:48px}.about-card{max-width:640px}
+}
+
+/* Two-up project grid: every card gets the same preview and the same height,
+   and the copy sits on the bottom edge so no card floats a summary mid-card. */
+@media(min-width:641px) and (max-width:980px){
+  .project-grid{grid-auto-rows:1fr}
+  .project-card,.project-card:nth-child(n),.project-card:nth-child(1){grid-column:span 6}
+  .project-card .project-preview,.project-card:nth-child(1) .project-preview,.project-card:nth-child(2) .project-preview,.project-card:nth-child(n) .project-preview{height:390px}
+  .project-link{display:flex;flex-direction:column;height:100%}
+  .project-copy{flex:1;display:flex;flex-direction:column;justify-content:space-between}
 }
 
 @media(max-width:640px){
@@ -527,8 +563,10 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
 .contact-panel .btn.primary::before{background:var(--red)}
 .contact-panel .btn.ghost::before{background:var(--blue)}
 .contact-panel .btn.roblox::before{background:var(--yellow)}
-.copy-discord.is-copied{
-  background:#71e38c;
+/* Specificity 0,4,0 so the copied state beats `.contact-panel .btn.primary`. */
+.contact-panel .btn.primary.copy-discord.is-copied{
+  background:var(--ink);
+  color:var(--paper);
   transform:translate(-2px,-2px) rotate(.25deg);
 }
 
@@ -571,14 +609,6 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
 }
 .project-card.is-hovered .project-preview .media-fill,.project-card:focus-within .project-preview .media-fill{
   transform:translate3d(var(--project-media-x),var(--project-media-y),0) scale(var(--project-media-scale))
-}
-.project-preview .media-placeholder{
-  z-index:5;
-  transform:translate(calc(-50% + var(--project-magnet-x)),calc(-50% + var(--project-magnet-y))) rotate(-.01deg);
-  transition:transform .13s cubic-bezier(.18,.9,.2,1),box-shadow .18s ease,background .18s ease
-}
-.project-card.is-hovered .project-preview .media-placeholder,.project-card:focus-within .project-preview .media-placeholder{
-  box-shadow:8px 8px 0 var(--ink);background:#ffe36d
 }
 .project-index{z-index:6;transform:translateZ(22px);transition:transform .2s cubic-bezier(.2,.9,.2,1),box-shadow .2s ease}
 .project-card.is-hovered .project-index,.project-card:focus-within .project-index{animation:project-sticker-kick .46s cubic-bezier(.16,.9,.24,1.2) both;box-shadow:3px 3px 0 rgba(23,20,29,.18)}
@@ -657,7 +687,7 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
 .clip-card.is-hovered .clip-meta span,.clip-card:focus-within .clip-meta span{transform:translateX(-4px);color:#ffe36d}
 
 @media(prefers-reduced-motion:reduce){
-  .project-preview,.project-preview:before,.project-preview:after,.project-preview .media-fill,.project-preview .media-placeholder,
+  .project-preview,.project-preview:before,.project-preview:after,.project-preview .media-fill,
   .project-index,.project-open,.project-copy h3,.project-copy p,
   .clip-frame,.clip-frame:before,.clip-frame:after,.clip-frame .media-fill,.clip-no,.clip-play,.clip-meta h3,.clip-meta span{
     transition:none!important;animation:none!important
@@ -665,7 +695,6 @@ footer{margin-top:100px;padding:28px 0;background:var(--ink);color:var(--paper);
   .project-preview,.clip-frame{transform:none!important}
   .project-preview:before,.clip-frame:before{transform:none!important}
   .project-preview .media-fill,.clip-frame .media-fill{transform:none!important}
-  .project-preview .media-placeholder{transform:translate(-50%,-50%)!important}
 }
 
 </style>
@@ -696,164 +725,113 @@ const PORTFOLIO_DATA = {
     "name": "ujji_k06",
     "mark": "u.",
     "role": "Roblox Gameplay Developer",
-    "status": "Open to commissions",
+    "status": "Available for commissions",
     "discord": ".ujji",
     "profileUrl": "https://www.roblox.com/users/2561421989/profile",
     "profileLabel": "Roblox Profile"
   },
   "hero": {
-    "eyebrow": "Ujji / Roblox developer",
-    "headline": [
-      "Freelance",
-      "developer",
-      "for hire."
-    ],
-    "lead": "Combat, movement, UI, and everything under the hood. If you need something that plays well and doesn't fall apart at scale, you're in the right place.",
-    "tags": [
-      "Open to commissions",
-      "Luau",
-      "Rust"
-    ],
+    "eyebrow": "ujji_k06 / Roblox gameplay developer",
+    "headline": ["Freelance", "developer", "for hire."],
+    "lead": "I build combat, movement, UI, and networking on Roblox. Clean Luau and Rust code that plays well and holds up in production.",
+    "tags": ["Luau & Rust", "Gameplay & Systems", "London, UK"],
     "media": {
-      "type": "video",
-      "src": "",
-      "poster": "",
-      "alt": "Gameplay preview"
+      "type": "image",
+      "src": "hero.webp",
+      "alt": "Neon grid course with glowing platforms and an in-game HUD"
     }
   },
-  "banner": [
-    "Combat",
-    "Movement",
-    "Networking",
-    "UI",
-    "Developer tools"
-  ],
+  "banner": ["Combat", "Movement", "Networking", "Custom UI", "Tooling"],
   "projects": [
     {
-      "title": "",
-      "summary": "",
-      "media": {
-        "type": "image",
-        "src": "",
-        "alt": ""
-      },
-      "url": ""
+      "title": "Combat Framework",
+      "summary": "Modular melee framework with precise hitboxes, combat state handling, and reliable server-side hit detection.",
+      "media": { "type": "image", "src": "combatframework.webp", "alt": "Combat hit effect during a Roblox melee encounter" },
+      "url": "https://www.roblox.com/games/91647918827101/Combat-Framework"
     },
     {
-      "title": "",
-      "summary": "",
-      "media": {
-        "type": "image",
-        "src": "",
-        "alt": ""
-      },
-      "url": ""
+      "title": "ODM Gear Showcase",
+      "summary": "High-speed aerial traversal featuring dual grapples, momentum conservation, gas management, and tree-to-tree flow.",
+      "media": { "type": "image", "src": "odmgear.webp", "alt": "Village and river environment from the ODM Gear Showcase" },
+      "url": "https://www.roblox.com/games/10441308512/ODM-Gear-Showcase"
     },
     {
-      "title": "",
-      "summary": "",
-      "media": {
-        "type": "image",
-        "src": "",
-        "alt": ""
-      },
-      "url": ""
+      "title": "Grappling Game",
+      "summary": "Movement playground focused on hook-and-swing mechanics, variable speed ramps, and mid-air arc control.",
+      "media": { "type": "image", "src": "grappling.webp", "alt": "Neon grappling course with glowing hoops and platforms" },
+      "url": "https://www.roblox.com/games/100061109427541/GrapplingGameBaseplate"
     },
     {
-      "title": "",
-      "summary": "",
-      "media": {
-        "type": "image",
-        "src": "",
-        "alt": ""
-      },
-      "url": ""
+      "title": "BattleArena",
+      "summary": "Anime-arena style PvP prototype with four distinct character kits currently in testing.",
+      "media": { "type": "image", "src": "battlearena.webp", "alt": "Stone bridge and river in the BattleArena world" },
+      "url": "https://www.roblox.com/games/74673380921481/BattleArena"
     }
   ],
   "clips": [
     {
-      "title": "",
-      "category": "",
+      "title": "Combat System 1",
+      "category": "Melee combat",
       "featured": true,
-      "media": {
-        "type": "video",
-        "src": "",
-        "poster": "",
-        "alt": ""
-      },
-      "url": ""
+      "media": { "type": "video", "src": "videos/web/CombatSystem1.mp4", "poster": "videos/CombatSystem1.jpg", "alt": "Roblox character approaching an opponent in a forest arena" }
     },
     {
-      "title": "",
-      "category": "",
+      "title": "ODM Gear Showcase",
+      "category": "Traversal",
       "featured": false,
-      "media": {
-        "type": "video",
-        "src": "",
-        "poster": "",
-        "alt": ""
-      },
-      "url": ""
+      "media": { "type": "video", "src": "videos/web/ODMGearShowcase.mp4", "poster": "videos/ODMGearShowcase.jpg", "alt": "ODM gear character flying between trees" }
     },
     {
-      "title": "",
-      "category": "",
+      "title": "UI Showcase 2",
+      "category": "Interface",
       "featured": false,
-      "media": {
-        "type": "video",
-        "src": "",
-        "poster": "",
-        "alt": ""
-      },
-      "url": ""
+      "media": { "type": "video", "src": "videos/web/UIShowcase2.mp4", "poster": "videos/UIShowcase2.jpg", "alt": "Character selection interface with fighter details and abilities" }
     }
   ],
   "sideProjects": [
     {
-      "title": "",
-      "category": "",
-      "summary": "",
+      "title": "rojo-doctor",
+      "category": "Rust / CLI",
+      "summary": "CLI tool that catches broken Rojo project mappings before Studio does. Clear diagnostics, CI exit codes, and GitHub Action support.",
+      "url": "https://github.com/ujji-k06/rojo-doctor"
+    },
+    {
+      "title": "battle-arena-demo",
+      "category": "Luau / Combat",
+      "summary": "Server-authoritative arena combat framework with modular character abilities, movement validation, attack timing clashes, and client presentation layers.",
       "url": ""
     },
     {
-      "title": "",
-      "category": "",
-      "summary": "",
-      "url": ""
+      "title": "souls-combat-demo",
+      "category": "Luau / Combat",
+      "summary": "Minimal Rojo starter project for prototyping Souls-like combat mechanics, attack commitments, and stamina management.",
+      "url": "https://github.com/ujji-k06/souls-combat-demo"
     },
     {
-      "title": "",
-      "category": "",
-      "summary": "",
+      "title": "coaster-system",
+      "category": "Luau / Systems",
+      "summary": "Track and ride controller for the GoldStriker coaster, including expanding attraction logic and visual debug tools.",
       "url": ""
     }
   ],
+  "sections": {
+    "work": { "eyebrow": "Selected work", "heading": ["Less talk.", "More play."] },
+    "clips": { "eyebrow": "In action", "heading": ["Some videos", "of my work."] },
+    "sideProjects": { "eyebrow": "Side projects", "heading": ["Code and tools", "I've built."] },
+    "about": { "eyebrow": "About", "heading": ["Hello", "there."] }
+  },
   "about": {
-    "title": [
-      "Hello",
-      "there."
-    ],
-    "text": "Programming for 5+ years, freelancing on Roblox since 2022. I handle combat, movement, UI, networking, and data systems. Clean code, solid gameplay, no shortcuts.",
-    "media": {
-      "type": "image",
-      "src": "profilepic.jpg",
-      "alt": "Illustrated avatar of Ujji"
-    }
+    "text": "Programming for 5+ years, freelancing on Roblox since 2022. I build combat, movement, UI, networking, and data systems in Luau and Rust. Solid architecture, responsive gameplay, no shortcuts.",
+    "media": { "type": "image", "src": "profilepic.jpg", "alt": "Illustrated avatar of Ujji" }
   },
   "contact": {
-    "message": "Combat prototype, data layer, economy, or a whole systems overhaul. Tell me what you're building and let's figure out if I'm a good fit.",
-    "panelTitle": "Got a project?",
-    "panelText": "Message me on Discord with what you need. Even a few lines is enough to get started."
+    "message": "Building a combat prototype, data layer, or full systems overhaul? Tell me about your game and we can discuss the scope.",
+    "panelTitle": "Start a conversation",
+    "panelText": "Message me on Discord with what you need. A quick summary is plenty to get started."
   },
   "socials": [
-    {
-      "label": "GitHub",
-      "url": "https://github.com/ujji-k06"
-    },
-    {
-      "label": "Discord",
-      "url": "https://discord.com/users/1289729295178264616"
-    }
+    { "label": "GitHub", "url": "https://github.com/ujji-k06" },
+    { "label": "Discord", "url": "https://discord.com/users/1289729295178264616" }
   ]
 };
 
@@ -861,11 +839,11 @@ const escapeHTML = (value = '') => String(value)
   .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
   .replaceAll('"','&quot;').replaceAll("'",'&#039;');
 
-function mediaMarkup(media = {}, placeholder = 'ADD PREVIEW') {
+function mediaMarkup(media = {}) {
   const src = media.src || '';
   const type = media.type || 'image';
   const alt = escapeHTML(media.alt || 'Portfolio preview');
-  if (!src) return `<span class="media-placeholder">${escapeHTML(placeholder)}</span>`;
+  if (!src) return '';
   if (type === 'video') {
     const poster = media.poster ? ` poster="${escapeHTML(media.poster)}"` : '';
     return `<video class="media-fill" autoplay muted loop playsinline preload="metadata"${poster} aria-label="${alt}"><source src="${escapeHTML(src)}"></video>`;
@@ -884,7 +862,7 @@ function optionalLink(url, className, label, attrs='') {
 function projectCard(project, index) {
   const body = `
     <div class="project-preview">
-      ${mediaMarkup(project.media, 'ADD PROJECT PREVIEW')}
+      ${mediaMarkup(project.media)}
       <span class="project-index">Project ${String(index + 1).padStart(2,'0')}</span>
       ${project.url ? '<span class="project-open">↗</span>' : ''}
     </div>
@@ -902,10 +880,10 @@ function sideProjectCard(project, index) {
   const body = `<div class="side-index">Side ${String(index + 1).padStart(2,'0')} / ${escapeHTML(project.category || 'Project')}</div>
     <h3>${escapeHTML(project.title || '')}</h3>
     <p>${escapeHTML(project.summary || '')}</p>
-    <div class="side-foot"><span>${project.url ? 'View project' : 'Add project link'}</span><span class="side-open">${project.url ? '↗' : '＋'}</span></div>`;
+    <div class="side-foot"><span>${project.url ? 'View project' : 'Private repo'}</span><span class="side-open"${project.url ? '' : ' aria-hidden="true"'}>${project.url ? '↗' : '—'}</span></div>`;
   return project.url
     ? `<article class="side-card reveal"><a class="side-link" href="${escapeHTML(project.url)}" target="_blank" rel="noopener noreferrer">${body}</a></article>`
-    : `<article class="side-card reveal"><div class="side-link">${body}</div></article>`;
+    : `<article class="side-card reveal is-private"><div class="side-link">${body}</div></article>`;
 }
 
 function render() {
@@ -919,8 +897,8 @@ function render() {
   const items = (d.banner?.length ? d.banner : ['Gameplay Developer']).map(item => `<span class="marquee-item">${escapeHTML(item)}</span>`).join('');
   const heroTags = (d.hero.tags || []).map(tag => `<span class="hero-tag">${escapeHTML(tag)}</span>`).join('');
   const clips = d.clips || [];
-  const featuredClip = clips.find(clip => clip.featured) || clips[0];
-  const otherClips = clips.filter(clip => clip !== featuredClip).slice(0, 2);
+  const featuredClip = clips.find(clip => clip && clip.featured) || clips[0] || null;
+  const otherClips = clips.filter(clip => clip && clip !== featuredClip).slice(0, 2);
 
   document.getElementById('app').innerHTML = `
     <section class="hero" id="top">
@@ -933,7 +911,7 @@ function render() {
           <div class="actions"><a class="btn primary" href="#work">View work <span class="btn-icon">↗</span></a><a class="btn ghost" href="#clips">Watch clips <span class="btn-icon">▶</span></a></div>
         </div>
         <div class="hero-media-wrap">
-          <div class="hero-media">${mediaMarkup(d.hero.media, 'ADD HERO GAMEPLAY')}<span class="hero-click-cue" aria-hidden="true"><svg viewBox="0 0 20 20" focusable="false"><path d="M3.2 2.7 15.8 10l-5.4 1.2 2.8 5-2.6 1.4-2.8-5-3.6 4.3z"/></svg><span>Click me</span></span></div>
+          <div class="hero-media">${mediaMarkup(d.hero.media)}<span class="hero-click-cue" aria-hidden="true"><svg viewBox="0 0 20 20" focusable="false"><path d="M3.2 2.7 15.8 10l-5.4 1.2 2.8 5-2.6 1.4-2.8-5-3.6 4.3z"/></svg><span>Click me</span></span></div>
         </div>
       </div>
     </section>
@@ -948,7 +926,7 @@ function render() {
     <section class="section" id="work">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Selected work</div><h2>Less talk.<br><em>More play.</em></h2></div>
+          <div><div class="eyebrow">${escapeHTML(d.sections?.work?.eyebrow || 'Selected work')}</div><h2>${escapeHTML(d.sections?.work?.heading?.[0] || 'Less talk.')}<br><em>${escapeHTML(d.sections?.work?.heading?.[1] || 'More play.')}</em></h2></div>
         </div>
         <div class="project-grid">${(d.projects || []).map(projectCard).join('')}</div>
       </div>
@@ -957,16 +935,16 @@ function render() {
     <section class="section clips-section" id="clips">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Gameplay clips</div><h2>Some videos<br><em>of my work.</em></h2></div>
+          <div><div class="eyebrow">${escapeHTML(d.sections?.clips?.eyebrow || 'Gameplay clips')}</div><h2>${escapeHTML(d.sections?.clips?.heading?.[0] || 'Some videos')}<br><em>${escapeHTML(d.sections?.clips?.heading?.[1] || 'of my work.')}</em></h2></div>
         </div>
         <div class="clip-grid">
           ${featuredClip ? `<article class="clip-card featured reveal">
-            <div class="clip-frame">${mediaMarkup(featuredClip.media, 'ADD FEATURED CLIP')}<span class="clip-no">Clip 01 / Featured</span><span class="clip-play">▶</span></div>
+            <div class="clip-frame">${mediaMarkup(featuredClip.media)}<span class="clip-no">Clip 01 / Featured</span><span class="clip-play">▶</span></div>
             <div class="clip-meta"><h3>${escapeHTML(featuredClip.title)}</h3><span>${escapeHTML(featuredClip.category || '')}</span></div>
           </article>` : ''}
           <div class="clip-stack">
             ${otherClips.map((clip, index) => `<article class="clip-card reveal">
-              <div class="clip-frame">${mediaMarkup(clip.media, 'ADD CLIP')}<span class="clip-no">Clip ${String(index + 2).padStart(2,'0')}</span><span class="clip-play">▶</span></div>
+              <div class="clip-frame">${mediaMarkup(clip.media)}<span class="clip-no">Clip ${String(index + 2).padStart(2,'0')}</span><span class="clip-play">▶</span></div>
               <div class="clip-meta"><h3>${escapeHTML(clip.title)}</h3><span>${escapeHTML(clip.category || '')}</span></div>
             </article>`).join('')}
           </div>
@@ -977,7 +955,7 @@ function render() {
     <section class="section side-section" id="side-projects">
       <div class="shell">
         <div class="section-head reveal">
-          <div><div class="eyebrow">Side projects</div><h2>Developer tools<br><em>I've made.</em></h2></div>
+          <div><div class="eyebrow">${escapeHTML(d.sections?.sideProjects?.eyebrow || 'Side projects')}</div><h2>${escapeHTML(d.sections?.sideProjects?.heading?.[0] || 'Developer tools')}<br><em>${escapeHTML(d.sections?.sideProjects?.heading?.[1] || "I've made.")}</em></h2></div>
         </div>
         <div class="side-grid">${(d.sideProjects || []).map(sideProjectCard).join('')}</div>
       </div>
@@ -985,8 +963,8 @@ function render() {
 
     <section class="section" id="about">
       <div class="shell about-layout reveal">
-        <div class="about-card">${mediaMarkup(d.about?.media, 'ADD PORTRAIT / AVATAR')}</div>
-        <div class="about-copy"><div class="eyebrow">About</div><h2>${escapeHTML(d.about?.title?.[0] || 'A little')}<br><em>${escapeHTML(d.about?.title?.[1] || 'context.')}</em></h2><p>${escapeHTML(d.about?.text || '')}</p></div>
+        <div class="about-card">${mediaMarkup(d.about?.media)}</div>
+        <div class="about-copy"><div class="eyebrow">About</div><h2>${escapeHTML(d.sections?.about?.heading?.[0] || 'A little')}<br><em>${escapeHTML(d.sections?.about?.heading?.[1] || 'context.')}</em></h2><p>${escapeHTML(d.about?.text || '')}</p></div>
       </div>
     </section>
 
@@ -1273,6 +1251,7 @@ function bindInteractions() {
   if (copy) {
     const label = copy.querySelector('.copy-label');
     const original = label?.textContent || '';
+    let copyTimer = 0;
     copy.addEventListener('click', async () => {
       const value = copy.dataset.tag || '';
       let ok = false;
@@ -1285,7 +1264,8 @@ function bindInteractions() {
       } catch (_) {}
       if (label) label.textContent = ok ? `Copied ${value} ✓` : `Discord: ${value}`;
       if (ok) copy.classList.add('is-copied');
-      setTimeout(() => { if (label) label.textContent = original; copy.classList.remove('is-copied'); }, 1500);
+      clearTimeout(copyTimer);
+      copyTimer = setTimeout(() => { if (label) label.textContent = original; copy.classList.remove('is-copied'); }, 1500);
     });
   }
 
@@ -1509,7 +1489,7 @@ function bindInteractions() {
     };
 
     sideCard.addEventListener('pointermove', event => {
-      if (reducedMotion || event.pointerType === 'touch' || sideCard.classList.contains('is-shattering')) return;
+      if (reducedMotion || event.pointerType === 'touch' || sideCard.classList.contains('is-shattering') || sideCard.classList.contains('is-private')) return;
       const rect = sideCard.getBoundingClientRect();
       const x = Math.max(-1, Math.min(1, ((event.clientX - rect.left) / rect.width) * 2 - 1));
       const y = Math.max(-1, Math.min(1, ((event.clientY - rect.top) / rect.height) * 2 - 1));
