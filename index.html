@@ -746,7 +746,7 @@ const PORTFOLIO_DATA = {
     {
       "title": "Combat Framework",
       "summary": "Modular melee framework with precise hitboxes, combat state handling, and reliable server-side hit detection.",
-      "media": { "type": "image", "src": "combatframework.webp", "alt": "Combat hit effect during a Roblox melee encounter" },
+      "media": { "type": "video", "src": "videos/web/CombatFrameworkLoop.mp4", "poster": "videos/web/CombatFrameworkLoop.webp", "alt": "Combo landing on a sparring NPC with hit flash and cooldown UI" },
       "url": "https://www.roblox.com/games/91647918827101/Combat-Framework"
     },
     {
@@ -846,12 +846,33 @@ function mediaMarkup(media = {}) {
   if (!src) return '';
   if (type === 'video') {
     const poster = media.poster ? ` poster="${escapeHTML(media.poster)}"` : '';
-    return `<video class="media-fill" autoplay muted loop playsinline preload="metadata"${poster} aria-label="${alt}"><source src="${escapeHTML(src)}"></video>`;
+    if (media.poster && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return `<img class="media-fill" src="${escapeHTML(media.poster)}" alt="${alt}" loading="lazy">`;
+    }
+    return `<video class="media-fill" muted loop playsinline preload="metadata"${poster} aria-label="${alt}"><source src="${escapeHTML(src)}"></video>`;
   }
   if (type === 'youtube') {
     return `<iframe class="media-fill" src="${escapeHTML(src)}" title="${alt}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
   }
   return `<img class="media-fill" src="${escapeHTML(src)}" alt="${alt}" loading="lazy">`;
+}
+
+function setupMediaPlayback() {
+  const videos = document.querySelectorAll('video.media-fill');
+  if (!videos.length) return;
+  const play = video => {
+    const started = video.play();
+    if (started) started.catch(() => {});
+  };
+  if (!('IntersectionObserver' in window)) {
+    videos.forEach(play);
+    return;
+  }
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) play(entry.target);
+    else entry.target.pause();
+  }));
+  videos.forEach(video => observer.observe(video));
 }
 
 function optionalLink(url, className, label, attrs='') {
@@ -1246,6 +1267,7 @@ function setupPlayfulPortfolioCards() {
 function bindInteractions() {
   setupInteractiveDotBackgrounds();
   setupPlayfulPortfolioCards();
+  setupMediaPlayback();
 
   const copy = document.querySelector('.copy-discord');
   if (copy) {
